@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 # PAGE CONFIG — phải là lệnh Streamlit đầu tiên
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="Fraud Detection | HUFI",
+    page_title="Fraud Detection | HUSC",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -190,7 +190,7 @@ with st.sidebar:
     st.markdown("<hr style='border-color:#334155; margin:1rem 0;'>", unsafe_allow_html=True)
     st.markdown("""
     <div style='padding-top:2.5rem; font-size:.7rem; color:#475569; text-align:center;'>
-        HUFI · Khoa CNTT · 2024
+        HUSC · Khoa CNTT · 2026
     </div>
     """, unsafe_allow_html=True)
 
@@ -262,17 +262,17 @@ if page == "📊  Giới thiệu & Dữ liệu":
 
     st.markdown("""
     <div class="hero">
-        <div class="hero-badge">🎓 Đồ án tốt nghiệp · HUFI 2024</div>
+        <div class="hero-badge">🎓 Đánh Giá Cuối Học Phần</div>
         <div class="hero-title">
-            Ứng dụng các mô hình học máy trong<br>
-            <span>phát hiện gian lận thẻ tín dụng</span>
+            Phân tích dữ liệu giao dịch thẻ tín dụng <br>
+            <span>bằng thuật toán Logistic Regression và XGBoost </span>
         </div>
-        <div class="hero-sub">Trường hợp nghiên cứu: Logistic Regression &amp; XGBoost</div>
+        <div class="hero-sub">: nhằm nhận diện và cảnh báo các giao dịch gian lận</div>
         <hr class="hero-divider">
         <div class="hero-meta">
             <span>👤 <b>Họ và tên:</b> Võ Nguyễn Huyền Vi</span>
-            <span>🎓 <b>MSSV:</b> 21T1020828</span>
-            <span>🏫 <b>Trường:</b> ĐH Công nghiệp Thực phẩm TP.HCM</span>
+            <span>🎓 <b>Mã Sinh Viên:</b> 21T1020828</span>
+            <span>🏫 <b>Trường:</b> Đại Học Khoa Học </span>
         </div>
     </div>
     """, unsafe_allow_html=True)
