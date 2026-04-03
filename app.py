@@ -543,14 +543,14 @@ elif page == "🤖  Triển khai mô hình":
         r3 = st.columns(7, gap="small")
         for i, idx in enumerate(range(15, 22)):
             with r3[i]:
-                v_vals[f"V{idx}"] = st.session_state(
+                v_vals[f"V{idx}"] = st.number_input(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
         r4 = st.columns(7, gap="small")
         for i, idx in enumerate(range(22, 29)):
             with r4[i]:
-                v_vals[f"V{idx}"] = st.session_state(
+                v_vals[f"V{idx}"] = st.number_input(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
