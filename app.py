@@ -267,7 +267,7 @@ if page == "📊  Giới thiệu & Dữ liệu":
             Phân tích dữ liệu giao dịch thẻ tín dụng <br>
             <span>bằng thuật toán Logistic Regression và XGBoost </span>
         </div>
-        <div class="hero-sub">: nhằm nhận diện và cảnh báo các giao dịch gian lận</div>
+        <div class="hero-tittle"> nhằm nhận diện và cảnh báo các giao dịch gian lận</div>
         <hr class="hero-divider">
         <div class="hero-meta">
             <span>👤 <b>Họ và tên:</b> Võ Nguyễn Huyền Vi</span>
