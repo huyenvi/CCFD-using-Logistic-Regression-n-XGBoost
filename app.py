@@ -506,13 +506,13 @@ elif page == "🤖  Triển khai mô hình":
                     unsafe_allow_html=True)
         ct, ca, _, __ = st.columns([2, 2, 1, 1], gap="medium")
         with ct:
-            time_val = st.session_state(
+            time_val = st.number_input(
                 "Time (giây từ giao dịch đầu tiên)",
                 value=pv("Time"), step=1.0, format="%.2f",
                 help="Khoảng thời gian tính từ giao dịch đầu tiên trong dataset (đơn vị: giây)"
             )
         with ca:
-            amount_val = st.session_state(
+            amount_val = st.number_input(
                 "Amount (giá trị giao dịch, USD)",
                 value=pv("Amount"), min_value=0.0, step=0.01, format="%.2f",
                 help="Giá trị tiền của giao dịch tính bằng USD"
@@ -525,14 +525,14 @@ elif page == "🤖  Triển khai mô hình":
         r1 = st.columns(7, gap="small")
         for i, idx in enumerate(range(1, 8)):
             with r1[i]:
-                v_vals[f"V{idx}"] = st.session_state(
+                v_vals[f"V{idx}"] = st.number_input(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
         r2 = st.columns(7, gap="small")
         for i, idx in enumerate(range(8, 15)):
             with r2[i]:
-                v_vals[f"V{idx}"] = st.session_state(
+                v_vals[f"V{idx}"] = st.number_input(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
