@@ -525,14 +525,14 @@ elif page == "🤖  Triển khai mô hình":
         r1 = st.columns(7, gap="small")
         for i, idx in enumerate(range(1, 8)):
             with r1[i]:
-                v_vals[f"V{idx}"] = st.number_input(
+                v_vals[f"V{idx}"] = st.session_state(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
         r2 = st.columns(7, gap="small")
         for i, idx in enumerate(range(8, 15)):
             with r2[i]:
-                v_vals[f"V{idx}"] = st.number_input(
+                v_vals[f"V{idx}"] = st.session_state(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
@@ -543,14 +543,14 @@ elif page == "🤖  Triển khai mô hình":
         r3 = st.columns(7, gap="small")
         for i, idx in enumerate(range(15, 22)):
             with r3[i]:
-                v_vals[f"V{idx}"] = st.number_input(
+                v_vals[f"V{idx}"] = st.session_state(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
         r4 = st.columns(7, gap="small")
         for i, idx in enumerate(range(22, 29)):
             with r4[i]:
-                v_vals[f"V{idx}"] = st.number_input(
+                v_vals[f"V{idx}"] = st.session_state(
                     f"V{idx}", value=pv(f"V{idx}"), format="%.4f", key=f"v{idx}",
                     help=f"Thành phần PCA thứ {idx} (đã ẩn danh hoá)"
                 )
