@@ -506,13 +506,13 @@ elif page == "🤖  Triển khai mô hình":
                     unsafe_allow_html=True)
         ct, ca, _, __ = st.columns([2, 2, 1, 1], gap="medium")
         with ct:
-            time_val = st.number_input(
+            time_val = st.session_state(
                 "Time (giây từ giao dịch đầu tiên)",
                 value=pv("Time"), step=1.0, format="%.2f",
                 help="Khoảng thời gian tính từ giao dịch đầu tiên trong dataset (đơn vị: giây)"
             )
         with ca:
-            amount_val = st.number_input(
+            amount_val = st.session_state(
                 "Amount (giá trị giao dịch, USD)",
                 value=pv("Amount"), min_value=0.0, step=0.01, format="%.2f",
                 help="Giá trị tiền của giao dịch tính bằng USD"
